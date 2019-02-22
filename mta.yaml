@@ -1,0 +1,22 @@
+ID: ChatBotUIApp
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: ChatBotUI
+   type: html5
+   path: ChatBotUI
+   parameters:
+      disk-quota: 512M
+      memory: 512M
+   build-parameters:
+      builder: grunt
+   requires:
+      - name: ChatBotApp-uaa
+      - name: chatbotbackenddest
+
+resources:
+ - name: ChatBotApp-uaa
+   type: org.cloudfoundry.existing-service
+ - name: chatbotbackenddest
+   type: org.cloudfoundry.existing-service

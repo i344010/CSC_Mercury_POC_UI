@@ -1,0 +1,37 @@
+<mvc:View controllerName="ChatBotUI.ChatBotUI.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<VBox>
+						<f:SimpleForm id="SimpleFormDisplay354"
+						editable="false"
+						layout="ResponsiveGridLayout"
+						title="Logged In User Details"
+						labelSpanXL="3"
+						labelSpanL="3"
+						labelSpanM="3"
+						labelSpanS="12"
+						adjustLabelSpan="false"
+						emptySpanXL="4"
+						emptySpanL="4"
+						emptySpanM="4"
+						emptySpanS="0"
+						columnsXL="1"
+						columnsL="1"
+						columnsM="1"
+						singleContainerFullSize="false" >
+							<f:content>
+								<Label text="Name" />
+								<Text id="nameId" />
+								<Label text="Logon Id" />
+								<Text id="logonId" />
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

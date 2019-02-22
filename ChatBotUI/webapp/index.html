@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>ChatBotUI</title>
+
+		<script id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-async="true"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"ChatBotUI.ChatBotUI": "./"}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body class="sapUiBody" id="content">
+		<div id = "content1">
+			<script src="https://cdn.recast.ai/webchat/webchat.js" type = "text/javascript"
+				channelId="a5e0dee7-e938-43d2-b745-70b60dd655f3"
+				token="aabe078c9d9b33b9afe7e546159a6547"
+				id="recast-webchat">
+			</script>
+			
+		</div>
+		<div id = "content1">
+			
+		</div>
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "ChatBotUI.ChatBotUI"
+					})
+				}).placeAt("content1");
+			});
+		</script>	
+	</body>
+
+</html>

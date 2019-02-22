@@ -1,0 +1,20 @@
+{
+  "welcomeFile": "/ChatBotUI/index.html",
+  "authenticationMethod": "route",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+      "source": "^/ChatBotUI/(.*)$",
+      "target": "$1",
+      "localDir": "webapp"
+    },
+    {
+	  "source": "^/chatbotbackend/(.*)$",
+	  "target": "$1",
+  	  "destination": "chatbotbackenddest",
+	  "csrfProtection": true
+	}
+  ]
+}
